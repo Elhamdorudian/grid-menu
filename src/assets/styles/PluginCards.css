@@ -1,0 +1,18 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  width: 100%;
+  gap: 16px;
+}
+
+.plugin-container {
+  padding: 20px;
+  width: 200px;
+}
+
+.plugin-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

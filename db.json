@@ -1,0 +1,71 @@
+{
+  "pages": [
+    {
+      "id": 0,
+      "name": "Marketing",
+      "icon": "fa-solid fa-square-poll-vertical fa-2x",
+      "path": "/marketing",
+      "selected": true,
+      "plugins": [
+        {
+          "id": 0,
+          "title": "Plugin 1",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": true
+        },
+        {
+          "id": 1,
+          "title": "Plugin 2",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": false
+        },
+        {
+          "id": 2,
+          "title": "Plugin 3",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": true
+        },
+        {
+          "id": 3,
+          "title": "Plugin 4",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": true
+        },
+        {
+          "id": 4,
+          "title": "Plugin 5",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": true
+        },
+        {
+          "id": 5,
+          "title": "Plugin 6",
+          "isEnabled": true,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "state": true
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Finance",
+      "icon": "fa-solid fa-coins fa-2x",
+      "path": "/finance",
+      "selected": false,
+      "plugins": []
+    },
+    {
+      "id": 2,
+      "name": "Personnel",
+      "icon": "fa-solid fa-clipboard-user fa-2x",
+      "path": "/personnel",
+      "selected": false,
+      "plugins": []
+    }
+  ]
+}
