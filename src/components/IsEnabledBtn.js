@@ -3,6 +3,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 
+
+/*------------------------------------
+Material UI styles for switch plugin
+--------------------------------------*/
+
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 ))(({ theme }) => ({
@@ -53,7 +58,14 @@ const IOSSwitch = styled((props) => (
     }),
   },
 }));
+
+
 const IsEnabledBtn = ({ testData, setTestData, setPluginStatus, pluginStatus }) => {
+
+
+  /*------------------------------------
+  Enabaling and disabling plugins
+  --------------------------------------*/
   const setPluginsStatus = async (e) => {
     const newData = [...testData];
     for (let i = 0; i < newData.length; i++) {
@@ -67,7 +79,6 @@ const IsEnabledBtn = ({ testData, setTestData, setPluginStatus, pluginStatus }) 
       });
       setTestData(newData);
       setPluginStatus(e.target.checked);
-      console.log(pluginStatus);
     }
   };
 

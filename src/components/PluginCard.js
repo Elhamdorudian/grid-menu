@@ -4,6 +4,8 @@ import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 import "../assets/styles/PluginCards.css";
 
+
+//--Material UI styles for switch plugin--//
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 ))(({ theme }) => ({
@@ -56,6 +58,12 @@ const IOSSwitch = styled((props) => (
 }));
 
 const PluginCard = ({ plugin, updatePluginState }) => {
+
+  /*------------------------------------
+  Calling the update state function in the PageContent.js
+  ---> update new plugin state in front
+  ---> send new plugin state to the server
+  --------------------------------------*/
   const handleSwitch = async (e) => {
     await updatePluginState({
       ...plugin,

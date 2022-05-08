@@ -12,6 +12,9 @@ function App() {
   const [testData, setTestData] = useState([]);
   let [pluginStatus, setPluginStatus] = useState(true);
 
+  /*------------------------------------
+  Getting data from the server
+  --------------------------------------*/
   useEffect(() => {
     let url = "http://localhost:8000/pages";
 
@@ -24,18 +27,14 @@ function App() {
       })
       .then((data) => {
         setTestData(data);
-        // setIsLoading(false);
       })
       .catch((err) =>
-        // setError(err)
         console.log(err)
       );
   }, []);
 
   return (
     <Router>
-      {/* {isLoading && <p>is loading...</p>} */}
-      {/* {error && <div>{error}</div>} */}
       {testData && (
         <Sidebar
           testData={testData}

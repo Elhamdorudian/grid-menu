@@ -3,12 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import PageContent from "../pages/PageContent";
 
 const Main = ({ testData, setTestData, pluginStatus }) => {
-  let wrapperStatus = pluginStatus
-    ? "main-container"
-    : "main-container-disabled";
 
   return (
-    <div className={wrapperStatus}>
+    <div className={`main-container ${pluginStatus
+      ? ""
+      : "disabled"}`}>
       <p>{testData.name}</p>
       <Routes>
         {testData.map((page) => {

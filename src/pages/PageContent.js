@@ -1,12 +1,23 @@
 import PluginCard from "../components/PluginCard";
 
+/*------------------------------------
+Setting a function to update the plugin status which is called in PluginCard.js
+--------------------------------------*/
 const PageContent = ({ page, setTestData }) => {
+
+  /*------------------------------------
+  Updating the data in front with setState
+  --------------------------------------*/
   const updatePluginState = async (newPlugin) => {
     setTestData((prevState) => {
       const newState = [...prevState];
       newState[page.id].plugins[newPlugin.id].state = newPlugin.state;
       return newState;
     });
+
+    /*------------------------------------
+    Updating the server data
+    --------------------------------------*/
     let newPage = page;
     newPage.plugins[newPlugin.id] = newPlugin;
     await fetch(`http://localhost:8000/pages/${page.id}`, {

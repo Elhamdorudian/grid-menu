@@ -8,11 +8,6 @@
   background-color: rgb(244, 240, 240);
 }
 
-.main-container-disabled {
-  padding: 20px;
-  height: 100vh;
-  width: 80%;
-  background-color: rgb(244, 240, 240);
+.disabled {
   opacity: 0.5;
-  overflow-y: auto;
 }

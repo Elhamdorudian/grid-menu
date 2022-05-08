@@ -33,12 +33,11 @@
 .sidebar-sections a {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 8px;
   padding: 8px;
   margin: 0;
   height: 36px;
-  border-left: 6px transparent;
   list-style-type: none;
   text-decoration: none;
   color: #222;
@@ -61,7 +60,12 @@
 }
 
 .active {
-  border-left: 6px solid rgb(167, 10, 10);
+  background-color: rgb(244, 240, 240);
+  border-left: 6px solid rgb(147, 7, 35);
+}
+.deactive{
+  background-color: rgb(227, 223, 225);
+  border-left: 6px solid rgb(227, 223, 225);
 }
 
 @media screen and (max-width: 900px) {

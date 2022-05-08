@@ -3,21 +3,13 @@ import SectionBtn from "../components/SectionBtn";
 import IsEnabledBtn from "../components/IsEnabledBtn";
 
 const Sidebar = ({ testData, setTestData, setPluginStatus, pluginStatus }) => {
-  const handleSelect = (id, e) => {
-    e.preventDefault();
-    setTestData(
-      testData.map((item) => {
-        if (item.id === id) {
-          return { ...item, selected: true };
-        } else {
-          return { ...item, selected: false };
-        }
-      })
-    );
-  };
 
   return (
-    <div className={pluginStatus ? "sidebar-container is-active" : "sidebar-container not-active" }>
+    <div
+      className={`sidebar-container ${
+        pluginStatus ? "is-active" : "not-active"
+      }`}
+    >
       <div className="sidebar-logo">
         Data<span>Guard</span>
       </div>
@@ -27,7 +19,8 @@ const Sidebar = ({ testData, setTestData, setPluginStatus, pluginStatus }) => {
             <SectionBtn
               key={item.id}
               item={item}
-              onClick={(e) => handleSelect(item.id, e)}
+              testData={testData}
+              setTestData ={setTestData}
             />
           );
         })}
