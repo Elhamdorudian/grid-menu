@@ -2,6 +2,9 @@ import "../assets/styles/Sidebar.css";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
+import Typography from "@material-ui/core/Typography";
+
+
 
 
 /*------------------------------------
@@ -14,6 +17,7 @@ const IOSSwitch = styled((props) => (
   width: 42,
   height: 26,
   padding: 0,
+  margin:0,
   "& .MuiSwitch-switchBase": {
     padding: 0,
     margin: 2,
@@ -57,6 +61,11 @@ const IOSSwitch = styled((props) => (
       duration: 500,
     }),
   },
+  "& .formControlLabel": {
+        label: {
+            fontSize: '0.7rem',
+    }
+}
 }));
 
 
@@ -86,7 +95,20 @@ const IsEnabledBtn = ({ testData, setTestData, setPluginStatus, pluginStatus }) 
     <div className="plugin-control">
       <FormControlLabel
         control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-        label={pluginStatus ? "All plugins enabled" : "All plugins disabled"}
+        label={
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            sx={{
+              fontSize: "0.8em",
+              fontWeight: "bold",
+
+            }}
+          >
+            {pluginStatus ? "All plugins enabled" : "All plugins disabled"}
+             </Typography>
+}
         labelPlacement="start"
         onChange={setPluginsStatus}
       />

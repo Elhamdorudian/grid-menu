@@ -1,13 +1,28 @@
 .main-container {
-  padding: 20px;
+  padding: 16px;
   flex-grow: 2;
   gap: 100px;
   height: 100vh;
-  width: 80%;
+  width: 85%;
   overflow-y: auto;
   background-color: rgb(244, 240, 240);
 }
 
 .disabled {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 960px) {
+  .main-container {
+    width: calc((1-0.24)*100);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plugin-control {
+    width: calc((1-0.36)*100);
+  }
+  .sidebar-container {
+    width: calc((1-0.36)*100);
+  }
 }
