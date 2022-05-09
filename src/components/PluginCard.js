@@ -3,6 +3,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
 import "../assets/styles/PluginCards.css";
+import "../assets/styles/Main.css";
 
 
 //--Material UI styles for switch plugin--//

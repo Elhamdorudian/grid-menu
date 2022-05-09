@@ -1,4 +1,5 @@
 import PluginCard from "../components/PluginCard";
+import "../assets/styles/Main.css";
 
 /*------------------------------------
 Setting a function to update the plugin status which is called in PluginCard.js
@@ -34,7 +35,7 @@ const PageContent = ({ page, setTestData }) => {
       {page.plugins.length > 0 &&
         page.plugins.map((plugin) => {
           return (
-            <div key={plugin.id} className="page-content-container">
+            <div key={plugin.id}>
               <PluginCard
                 plugin={plugin}
                 updatePluginState={updatePluginState}

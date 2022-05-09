@@ -5,47 +5,47 @@
       "name": "Marketing",
       "icon": "fa-solid fa-square-poll-vertical fa-2x",
       "path": "/marketing",
-      "selected": false,
+      "selected": true,
       "plugins": [
         {
           "id": 0,
           "title": "Plugin 1",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "state": true
         },
         {
           "id": 1,
           "title": "Plugin 2",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "state": false
         },
         {
           "id": 2,
           "title": "Plugin 3",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "state": true
         },
         {
           "id": 3,
           "title": "Plugin 4",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "state": true
+          "state": false
         },
         {
           "id": 4,
           "title": "Plugin 5",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "state": true
         },
         {
           "id": 5,
           "title": "Plugin 6",
-          "isEnabled": false,
+          "isEnabled": true,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "state": true
         }
@@ -64,7 +64,7 @@
       "name": "Personnel",
       "icon": "fa-solid fa-clipboard-user fa-2x",
       "path": "/personnel",
-      "selected": true,
+      "selected": false,
       "plugins": []
     }
   ]
