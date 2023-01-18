@@ -1,4 +1,4 @@
-## Sample plugin control dashboard
+## Grid menu template for web design
 ### Overview
  - This small app is a sample web page containing plugins that can be controlled by switch buttons 
  - There is an Enable/Disable switch button on the bottom left corner of the page which can enable or disable all the plugins 
